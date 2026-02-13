@@ -1,0 +1,40 @@
+import streamlit as st
+
+# --- 1. PAGE CONFIGURATION ---
+st.set_page_config(page_title="For Zaynab ❤️", page_icon="💖")
+
+# Custom CSS for a romantic look
+st.markdown("""
+    <style>
+    .main { background-color: #fff5f7; }
+    .stButton>button { 
+        background-color: #ff4d6d; 
+        color: white; 
+        border-radius: 20px; 
+        padding: 10px 25px;
+        font-weight: bold;
+    }
+    h1, h2, h3 { color: #c9184a; text-align: center; }
+    p { text-align: center; font-size: 18px; color: #590d22; }
+    </style>
+    """, unsafe_allow_html=True)
+
+# --- 2. THE CONTENT ---
+st.title("💌 A Special Message for Zaynab ❤️")
+
+st.write("I made this little space just for you to show how much you mean to me.")
+
+if st.button("Open Your Surprise 🌹"):
+    st.balloons()
+    st.subheader("You are my heart and my joy! ✨")
+    
+    st.markdown("""
+    ### Dear Zaynab,
+    Distance might keep us apart for now, but my heart is always right there with you. 
+    You are the most amazing person I know.
+    
+    **I love you!** ❤️
+    """)
+    
+    st.write("❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️")
+    st.snow()
